@@ -8,7 +8,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copia los archivos compilados de Angular al directorio donde Nginx los sirve
-COPY dist/ /usr/share/nginx/html/browser
+COPY dist/ /usr/share/nginx/html/angular/browser
 
 # Expón el puerto 80
 EXPOSE 80
